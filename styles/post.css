@@ -135,3 +135,54 @@ form p{
     border : 0;
     font-weight: bolder;
 }
+
+.commentBtn{
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.likePara {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: 'Josefin Slab', serif;
+
+    font-weight: bold;
+}
+
+.comment-list-title {
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.author{
+    margin-left: 50px;
+    font-family: 'Satisfy', cursive;
+}
+
+.para{
+    margin:0 50px;
+}
+
+.commentBox{
+    margin-left: 50px;
+    border: 2px solid rgba(170, 170, 170, 1);
+    
+
+}
+
+
+.commentSection{
+    background-color: lightgray;
+    margin: 50px;
+    border: 10px solid lightgray;
+    width: 60%;
+}
+
+.commentPara {
+    margin: 10px 10px;
+    background-color: white;
+    padding: 20px 0;
+    font-size: 20px;
+}
