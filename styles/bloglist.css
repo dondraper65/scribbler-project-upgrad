@@ -175,3 +175,35 @@ p {
 .btn{
     width: 100px;
 }
+
+
+
+@media (max-width: 800px) {
+
+    .leftspace{
+        font-size: 10px;
+        margin-right: 0;
+    }
+    .rightspace{
+        width: 80%;
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .col{
+        width: 50%;
+    }
+    .modal-content{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+}
+
+
+
+
+  

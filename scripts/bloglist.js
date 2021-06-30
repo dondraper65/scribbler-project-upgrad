@@ -71,6 +71,7 @@ revert.onclick = function() {
 }
 
 
+
 const partial = (string) => {
     if (string.length>120){
         return string.slice(0,120)+ "....";
@@ -84,3 +85,6 @@ for (let i=0; i<5; i++) {
     str = partial(str);
     document.getElementsByClassName("para")[i].innerHTML = str;
 }
+
+
+
