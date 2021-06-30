@@ -4,6 +4,23 @@ body {
     background-size: cover;
 }
 
+.postButtons{
+    position: fixed; /* or absolute */
+    top: 50%;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.postButtons button{
+    background-color: yellow;
+    padding:1%;
+    font-size:20px;
+    font-weight: bolder;
+    margin-right: 10px;;
+}
+
 .modal{
     display: none;
     position: fixed;
@@ -101,23 +118,6 @@ form p{
     font-weight: bolder;
 }
 
-.postButtons{
-    position: fixed; /* or absolute */
-    top: 50%;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.postButtons button{
-    background-color: yellow;
-    padding:1%;
-    font-size:20px;
-    font-weight: bolder;
-    margin-right: 10px;;
-}
-
 @media (max-width: 1000px) {
 
     .modal-content{
@@ -128,3 +128,8 @@ form p{
     }
 
 }
+
+
+
+
+

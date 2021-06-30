@@ -16,6 +16,7 @@ signupClose.onclick = function(){
     signupModal.style.display = "none";
 }
 
+
 var signinModal = document.getElementById("signinModal");
 var signinBtn = document.getElementById("signinButton"); 
 var signinClose = document.getElementsByClassName("close")[1];
@@ -34,7 +35,6 @@ window.onclick = function(){
     }
 }
 
-
 var createModal = document.getElementById("createModal");
 var createbtn = document.getElementById("createButton");
 var createClose = document.getElementsByClassName("close")[2];
@@ -46,3 +46,6 @@ createbtn.onclick = function(){
 createClose.onclick = function(){
     createModal.style.display = "none";
 }
+
+
+
