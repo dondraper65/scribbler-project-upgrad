@@ -33,3 +33,16 @@ window.onclick = function(){
         signinModal.style.display = "none";
     }
 }
+
+
+var createModal = document.getElementById("createModal");
+var createbtn = document.getElementById("createButton");
+var createClose = document.getElementsByClassName("close")[2];
+
+createbtn.onclick = function(){
+    createModal.style.display = "block";
+}
+
+createClose.onclick = function(){
+    createModal.style.display = "none";
+}
