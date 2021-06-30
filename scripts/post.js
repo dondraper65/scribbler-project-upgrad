@@ -69,3 +69,12 @@ likeBtn.onclick = function(){
         likePara.innerHTML = `${likeCount} people like this!`;
     }
 }
+
+if(document.getElementById("commentSection").innerHTML === ""){
+    document.getElementById("commentSection").style.border = 0;
+}
+
+function myFunction() {
+    var x = document.getElementById("comment-text").value;
+    document.getElementById("commentSection").innerHTML = '<p id="para" class = "commentPara">'+x+'</p>' + document.getElementById("commentSection").innerHTML;
+}
