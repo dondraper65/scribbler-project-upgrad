@@ -53,3 +53,19 @@ editsaveBtn.onclick = function(){
         editsaveBtn.innerHTML = "Edit";
     }
 }
+
+var likeBtn = document.getElementById("like-btn");
+var likePara = document.getElementById("like-para")
+
+let likeCount = 0;
+
+likeBtn.onclick = function(){
+    if (likeBtn.innerHTML === "Like"){
+        likeBtn.innerHTML = "Liked!";
+        likeCount ++;
+        likePara.innerHTML = "1 person likes this!" 
+    } else {
+        likeCount++;
+        likePara.innerHTML = `${likeCount} people like this!`;
+    }
+}
