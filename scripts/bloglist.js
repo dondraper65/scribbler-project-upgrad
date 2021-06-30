@@ -35,3 +35,37 @@ window.onclick = function(){
         signinModal.style.display = "none";
     }
 }
+
+var deleteModal = document.getElementById("deleteModal");
+
+var revert = document.getElementById("revert-btn");
+var deleteBtn1 = document.getElementsByClassName("garbage")[0];
+var deleteBtn2= document.getElementsByClassName("garbage")[1];
+var deleteBtn3 = document.getElementsByClassName("garbage")[2];
+var deleteBtn4 = document.getElementsByClassName("garbage")[3];
+var deleteBtn5 = document.getElementsByClassName("garbage")[4];
+    
+deleteBtn1.onclick = function(){
+        deleteModal.style.display = "block";
+}
+
+deleteBtn2.onclick = function(){
+    deleteModal.style.display = "block";
+}
+
+deleteBtn3.onclick = function(){
+    deleteModal.style.display = "block";
+}
+
+deleteBtn4.onclick = function(){
+    deleteModal.style.display = "block";
+}
+
+deleteBtn5.onclick = function(){
+    deleteModal.style.display = "block";
+}
+
+
+revert.onclick = function() {
+    deleteModal.style.display = "none";
+}
