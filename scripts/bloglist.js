@@ -69,3 +69,18 @@ deleteBtn5.onclick = function(){
 revert.onclick = function() {
     deleteModal.style.display = "none";
 }
+
+
+const partial = (string) => {
+    if (string.length>120){
+        return string.slice(0,120)+ "....";
+    } else{
+        return string;
+    }
+}
+
+for (let i=0; i<5; i++) {
+    let str = document.getElementsByClassName("para")[i].innerHTML;
+    str = partial(str);
+    document.getElementsByClassName("para")[i].innerHTML = str;
+}
