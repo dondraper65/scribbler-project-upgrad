@@ -15,3 +15,21 @@ signupBtn.onclick = function() {
 signupClose.onclick = function(){
     signupModal.style.display = "none";
 }
+
+var signinModal = document.getElementById("signinModal");
+var signinBtn = document.getElementById("signinButton"); 
+var signinClose = document.getElementsByClassName("close")[1];
+
+signinBtn.onclick = function(){
+    signinModal.style.display = "block";
+}
+
+signinClose.onclick = function(){
+    signinModal.style.display = "none";
+}
+
+window.onclick = function(){
+    if(event.target === signinModal){
+        signinModal.style.display = "none";
+    }
+}
