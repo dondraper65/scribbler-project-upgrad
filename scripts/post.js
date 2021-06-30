@@ -35,3 +35,21 @@ window.onclick = function(){
         signinModal.style.display = "none";
     }
 }
+
+var editsaveBtn = document.getElementById("edit-btn");
+
+editsaveBtn.onclick = function(){
+    if (editsaveBtn.innerHTML === "Edit"){
+        document.getElementById("main-para").contentEditable = "true";
+        document.getElementById("main-para").style.border = "2px solid rgba(170, 170, 170, 0.5)";
+        document.getElementById("main-heading").contentEditable = "true";
+        document.getElementById("main-heading").style.border = "2px solid pink";
+        editsaveBtn.innerHTML = "Save";
+    } else {
+        document.getElementById("main-para").contentEditable = "false";
+        document.getElementById("main-para").style.border = 0;
+        document.getElementById("main-heading").contentEditable = "false";
+        document.getElementById("main-heading").style.border = 0;
+        editsaveBtn.innerHTML = "Edit";
+    }
+}
