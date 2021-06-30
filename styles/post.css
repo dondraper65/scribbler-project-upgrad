@@ -125,3 +125,13 @@ form p{
     border:0;
     font-weight: bolder;
 }
+
+.likeBtn, .commentBtn {
+    margin : 30px 0 10px 50px;
+    background-color: #ef3b65;
+    color:white;
+    padding : 1% 2%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    border : 0;
+    font-weight: bolder;
+}
