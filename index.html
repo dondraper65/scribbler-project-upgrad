@@ -23,7 +23,28 @@
             <div class = "headerButtons">
                 <button id = "signinButton" class = "top-btn">Sign In</button>
                 <button id = "signupButton" class ="top-btn">Sign Up</button>
-            </div>     
+            </div>    
+            
+            <div id = "signupModal" class = "modal">
+                <div id = "signup-modal-content" class = "modal-content">
+                    <span class="close">&times;</span>
+                    <div    class = "formParent">
+                        <form class = "form">
+                            <h1>Get Started</h1>
+                            <label for = "fullname">Full Name</label>
+                            <input type="text" required name = "fullname" id = "fullname" placeholder="Enter Full Name">
+                            <label for = "username">Username</label>
+                            <input type="text" required id = "username" name = "username" placeholder="Enter Username">
+                            <label for = "password1">Password</label>
+                            <input type = 'password' id = "password1" name ="password1" required placeholder="Enter Password" >
+                            <label for = "password2">Confirm Password</label>
+                            <input type = 'password' id = "password2" name ="password2" required placeholder="Confirm Password" >
+                            <button class = "signbutton">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </header>
 
 
