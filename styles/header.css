@@ -33,3 +33,14 @@ header {
     font-family: sans-serif;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
+
+@media(max-width:500px){
+    .headerButtons{
+        width: 100px;
+    }
+    .top-btn{
+        font-size: 15px;
+        margin-right: 2px;
+    }
+
+}

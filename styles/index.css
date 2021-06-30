@@ -117,3 +117,14 @@ form p{
     font-weight: bolder;
     margin-right: 10px;;
 }
+
+@media (max-width: 1000px) {
+
+    .modal-content{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+
+}
