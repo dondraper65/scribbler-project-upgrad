@@ -5,15 +5,17 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">    <!-- This is satisfy cursive font link from Google Fonts. -->
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/header.css">      <!--Since all pages will have the same header  i created and linkeda header.css file to all the files.-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Javascript file will be linked at the bottonm line of body tag.-->
     
     </head>
 
     <body>
-        <!-- TODO: Include all your code for the header and home page here -->
+        <!-- This header section will be common to all pages. Along with modal functionality-->
         <header>
             <div class = "headerText">
                 <h1>ScriBBler</h1>
@@ -24,9 +26,13 @@
                 <button id = "signinButton" class = "top-btn">Sign In</button>
                 <button id = "signupButton" class ="top-btn">Sign Up</button>
             </div>
+
+        <!-- This is the modal section where i have defined the modals for sign up button.  -->
+        <!-- Cross button which closes the modal on clicking also added-->
+
             <div id = "signupModal" class = "modal">
                 <div id = "signup-modal-content" class = "modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close">&times;</span>     <!-- Cross Button -->
                     <div    class = "formParent">
                         <form class = "form">
                             <h1>Get Started</h1>
@@ -44,9 +50,12 @@
                 </div>
             </div>
 
+        <!-- This is the modal section where i have defined the modals for sign in button.  -->
+        <!-- Cross button which closes the modal on clicking also added-->
+
             <div id = "signinModal" class = "modal">
                 <div id = "signin-modal-content" class = "modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close">&times;</span>      <!-- Cross Button -->
                     <div    class = "formParent">
                         <form class = "form">
                             <h1>Welcome Back!</h1>
@@ -55,7 +64,7 @@
                             <label for = "logpassword">Password</label>
                             <input type = 'password' id = "logpassword" name ="logpassword" required placeholder="Enter Password" >
                             <button class = "signbutton">Log In</button>
-                            <p>Not a member? <a id = "signup-anchor">Sign Up</a></p>
+                            <p>Not a member? <a id = "signup-anchor">Sign Up</a></p>      <!-- Sign up Text is wrapped in anchor tag which opens signup modal on clicking. -->
                         </form>
                     </div>
                 </div>
@@ -63,13 +72,15 @@
         </header>
 
         <div class="postButtons">
-            <button id = "allButton" onclick="location.href = './html/bloglist.html'">All Posts</button>
-            <button id = "createButton">Create Post</button>
+            <button id = "allButton" onclick="location.href = './html/bloglist.html'">All Posts</button>   <!-- This button opens the bloglist.html page on clicking.-->
+            <button id = "createButton">Create Post</button>                                                <!-- This opens create post modal on clicking-->
         </div>
+
+        <!-- This is the create post modal. Cross button has been added.-->
 
         <div id = "createModal" class = "modal">
             <div id = "create-modal-content" class = "modal-content">
-                <span class="close">&times;</span>
+                <span class="close">&times;</span>          <!-- Cross Button -->
                 <div    class = "formParent">
                     <form class = "form">
                         <h1>Pen Your Post</h1>
@@ -83,7 +94,7 @@
             </div>
         </div>
 
-        <script src="./scripts/index.js"></script>
+        <script src="./scripts/index.js"></script>      <!-- Linked Javascript file at the end of body to make it properly functional-->
     </body>
 
 </html>

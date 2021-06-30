@@ -1,3 +1,4 @@
+/*CSS propeties of the modal*/
 .modal{
     display: none;
     position: fixed;
@@ -16,13 +17,11 @@
     padding: 1%;
     border: 1px solid white;
     width: 30%;
-    
-    border-radius: 30px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);   /*Shadows added to modal box for visual appeal*/
 }
 
 
-
+/*close button css cuustomizations*/
 .close {
     color: rgba(170, 170, 170, 1);
     float: right;
@@ -32,6 +31,7 @@
     font-family: 'Satisfy', cursive;
 }
 
+/*makes the close button black from grey on hover and changes cursor to pointer*/
 .close:hover,
 .close:focus{
     color: black;
@@ -39,12 +39,14 @@
     cursor: pointer;
 }
 
+
 .modal-content h1 {
-    text-align: center;
-    font-family: 'Satisfy', cursive;
+    text-align: center;                     /*Heading of the modal at the centre of modal*/
+    font-family: 'Satisfy', cursive;        /*Changed the font of heading of modals to satify cursive just for visual appeal. */
     
 }
 
+/*CSS for form and input fields in the modal*/
 label {
     font-size: 20px;
     font-weight: bolder;
@@ -74,6 +76,7 @@ form {
     justify-content: center;
 }
 
+/*CSS for button inside modal.*/
 .signbutton {
     padding: 2%;
     font-size: 20px;
@@ -83,14 +86,18 @@ form {
 
 }
 
+/*CSS for the signup anchor tag in the sign in modal.*/
 #signup-anchor {
     color:blue;
 }
+
 
 a:hover{
     cursor: pointer;
 }
 
+
+/*CSS for main heading of the blog. used font PT sans narrow to make it match  the font shown in the sample image of part 3*/
 .mainHeading{
     display: inline-flex;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -107,6 +114,7 @@ form p{
     font-weight: bolder;
 }
 
+/*CSS for aligning author name and edit button to the left and right parts of the window*/
 .pre-content{
     display: flex;
     flex-direction: row;
@@ -114,24 +122,25 @@ form p{
 }
 
 
-
+/*CSS for the edit button.*/
 .edit{
     margin-right: 50px;
-    background-color:  #ef3b65;
+    background-color:  #ef3b65;  /*Color deduced precisely using online resources to match the color shown in sample page*/
     color: white;
     padding: 1% 2%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);   /*Shadow given to button just for visuak appeal and to match the button shown in sample page*/
     margin-bottom: 50px;
     border:0;
     font-weight: bolder;
 }
 
+/*CSS for like and comment buttons*/
 .likeBtn, .commentBtn {
     margin : 30px 0 10px 50px;
     background-color: #ef3b65;
     color:white;
     padding : 1% 2%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);        /*Shadow given to button just for visuak appeal and to match the button shown in sample page*/
     border : 0;
     font-weight: bolder;
 }
@@ -142,10 +151,11 @@ form p{
 
 }
 
+/*CSS for the text just below the like button */
 .likePara {
     margin-left: 50px;
     margin-bottom: 30px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif;     /*google font used*/
 
     font-weight: bold;
 }
@@ -156,6 +166,8 @@ form p{
     font-size: 22px;
 }
 
+
+/*Changed the font of the author name to cusrive to match ot resemble the font shown in sample page*/
 .author{
     margin-left: 50px;
     font-family: 'Satisfy', cursive;
@@ -165,6 +177,7 @@ form p{
     margin:0 50px;
 }
 
+
 .commentBox{
     margin-left: 50px;
     border: 2px solid rgba(170, 170, 170, 1);
@@ -172,7 +185,7 @@ form p{
 
 }
 
-
+/*Added grey color background to the comment section */
 .commentSection{
     background-color: lightgray;
     margin: 50px;
@@ -180,6 +193,7 @@ form p{
     width: 60%;
 }
 
+/*Comment when posted is presented in a white box*/
 .commentPara {
     margin: 10px 10px;
     background-color: white;
@@ -187,6 +201,7 @@ form p{
     font-size: 20px;
 }
 
+/*Small customisations for when screen width is reduced*/
 @media(max-width:1000px){
 
     .col{

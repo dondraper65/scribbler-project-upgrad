@@ -1,3 +1,6 @@
+/*Added the css of header elements in one file as it is going to be the same for each page. For convinience and cleaner, more organised code*/
+
+
 header {
     font-family: 'Satisfy', cursive;
     
@@ -31,9 +34,11 @@ header {
     background-color: blue;
     color: white;
     font-family: sans-serif;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);   /*Shadows are added to buttons for visual appeal.*/
 }
 
+
+/*Little customizations for when the width of the screen is reduced*/
 @media(max-width:500px){
     .headerButtons{
         width: 100px;

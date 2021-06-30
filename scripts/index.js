@@ -1,3 +1,5 @@
+/*Sign up modal functionality code.*/
+
 var signupModal = document.getElementById("signupModal");
 var signupBtn = document.getElementById("signupButton");
 var signupClose = document.getElementsByClassName("close")[0];
@@ -16,6 +18,7 @@ signupClose.onclick = function(){
     signupModal.style.display = "none";
 }
 
+/*Sign in modal functionality code.*/
 
 var signinModal = document.getElementById("signinModal");
 var signinBtn = document.getElementById("signinButton"); 
@@ -28,12 +31,14 @@ signinBtn.onclick = function(){
 signinClose.onclick = function(){
     signinModal.style.display = "none";
 }
-
+/*Little experiment feature which closes the modal when the part of the window outside the modal is clicked. Only created this for sign in modal */
 window.onclick = function(){
     if(event.target === signinModal){
         signinModal.style.display = "none";
     }
 }
+
+/*Create post modal functionality code.*/
 
 var createModal = document.getElementById("createModal");
 var createbtn = document.getElementById("createButton");
